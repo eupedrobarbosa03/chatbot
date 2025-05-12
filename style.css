@@ -120,6 +120,6 @@
 
 @media screen and (max-width: 498px) {
     #section-container-chat {
-        height: 100vh;
+        min-height: 100vh;
     }
 }
