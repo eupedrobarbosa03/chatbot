@@ -70,16 +70,19 @@ class Chat {
 
 };
 
-buttonEnviar.addEventListener("click", () => {
+async function chatBot() {
+    const chat = new Chat(mensagemUsuario.value);
+    chat.mensagemUser();
+    limparMensagem();
+    await chat.mensagemBot();
+}      
 
-    async function chatBot() {
-        const chat = new Chat(mensagemUsuario.value);
-        chat.mensagemUser();
-        limparMensagem();
-        await chat.mensagemBot();
+window.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        chatBot();
     }
-
-    chatBot();
-
 })
 
+buttonEnviar.addEventListener("click", () => {
+    chatBot();
+})
