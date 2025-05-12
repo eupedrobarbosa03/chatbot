@@ -20,7 +20,7 @@ Um chatbot simples, leve e funcional criado com HTML, CSS e JavaScript puro. Ele
 - CSS3
 - JavaScript (ES6)
 
-# 🤖 ChatBot Rápido e Funcional
+## 🤖 ChatBot Rápido e Funcional
 
 Um chatbot simples, leve e funcional criado com HTML, CSS e JavaScript puro. Ele responde automaticamente com base em palavras-chave associadas a linguagens de programação e frameworks.
 
