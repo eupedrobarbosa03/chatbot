@@ -1,4 +1,4 @@
-## ChatBot 🤖2 - Sistema desenvolvido por [Pedro Henrique](https://github.com/eupedrobarbosa03). ##
+## ChatBot 🤖 - Sistema desenvolvido por [Pedro Henrique](https://github.com/eupedrobarbosa03). ##
 
 ```Chatbot -> 🔗``` [chatbot](https://eupedrobarbosa03.github.io/chatbot/)
 
