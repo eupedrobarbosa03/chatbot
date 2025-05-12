@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('fonts/Kanit/Kanit-Light.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+}
+
+#main-container {
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #05050550, #f5f5f550);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-container-chat {
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #33333340;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-chat {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 20px;
+    flex: 2;
+    overflow: auto;
+}
+
+.chat-bot,
+.chat-user {
+    display: flex;
+    height: auto;
+    max-width: 50%;
+    flex-direction: column;
+    padding: .3rem;
+    pointer-events: none;
+}
+
+.chat-user {
+    align-self: flex-end;
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 5px #33333310;
+    border-radius: 5px;
+    color: #050505;
+    
+}
+
+.chat-bot {
+    align-self: flex-start;
+    background-color: #050505;
+    box-shadow: 1px 1px 5px #33333310;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
+
+.chat-bot p,
+.chat-user p {
+    font-size: .7rem;
+    line-height: 15px;
+    padding: .3rem;
+    text-align: justify;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.chat-bot p {
+    color: #f1f1f1;
+}
+
+.chat-user p {
+    color: #050505;
+}
+
+#section-send-message {
+    display: flex;
+    gap: 10px;
+}
+
+#section-send-message #message-text {
+    padding: .3rem 1rem;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #33333340;
+    height: 50px;
+}
+
+#message-text:focus {
+    outline: none;
+    border: none;
+}
+
+#message-send {
+    width: 20%;
+    background-color: #050505;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#message-send:hover {
+    background-color: #151515
+}
+
+@media screen and (max-width: 498px) {
+    #section-container-chat {
+        height: 100vh;
+    }
+}
